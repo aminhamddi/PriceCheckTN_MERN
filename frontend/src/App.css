@@ -1,0 +1,178 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* --- AVIS & UI --- */
+.flex-row-spaced {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.badge-brand {
+  background: #eee;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.stock-ok {
+  color: green;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.stock-ko {
+  color: red;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.btn-view-source {
+  background: #0056b3;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+}
+
+.btn-view-source:hover {
+  background: #004494;
+}
+
+/* Reviews Section */
+.reviews-section {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 2px solid #eee;
+}
+
+.review-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 15px;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.ai-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.85rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.ai-badge.real {
+  background: #e8f5e9;
+  color: #2e7d32;
+  border: 1px solid #c8e6c9;
+}
+
+.ai-badge.fake {
+  background: #ffebee;
+  color: #c62828;
+  border: 1px solid #ffcdd2;
+}
+
+/* Formulaire Avis */
+.add-review-box {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 30px;
+  max-width: 600px;
+}
+
+.add-review-box textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-review-box select {
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.login-prompt {
+  padding: 20px;
+  text-align: center;
+  background: #e9ecef;
+  border-radius: 5px;
+  color: #495057;
+}
+
+.login-prompt a {
+  color: #0056b3;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.info-message {
+  background: #d1ecf1;
+  color: #0c5460;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
